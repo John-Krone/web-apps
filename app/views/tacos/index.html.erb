@@ -3,8 +3,9 @@
 
 <% tacos = ["carnitas", "steak", "veggie"] %>
 
+<p>There are <%= tacos.count %> tacos!</p>
 <ul>
-<li>Carintas</li>
-<li>Steak</li>
-<li>Veggie</li>
+<% for taco in tacos %>
+  <li><%= taco %></li>
+  <% end %>
 </ul>
